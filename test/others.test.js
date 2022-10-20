@@ -167,3 +167,20 @@ test('#26: non-property comments', t => {
   "a": 1
 }`)
 })
+
+// This will throw Unexpected token
+// test('parse with control character unescaped with indent', t => {
+//   const str = `{
+//     "a": "\x07"
+// }`
+//   const parsed = parse(str)
+//   t.is(parsed.a, '\x07')
+// })
+
+test('stringify with control character escaped with indent', t => {
+  const obj = {a: 'aaa\x07aaa'}
+  const str = stringify(obj, null, 4)
+  t.is(str, `{
+    "a": "aaa\\u0007aaa"
+}`)
+})
