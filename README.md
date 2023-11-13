@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/kaelzhang/node-comment-json.svg?branch=master)](https://travis-ci.org/kaelzhang/node-comment-json)
-[![Coverage](https://codecov.io/gh/kaelzhang/node-comment-json/branch/master/graph/badge.svg)](https://codecov.io/gh/kaelzhang/node-comment-json)
-[![npm module downloads per month](http://img.shields.io/npm/dm/comment-json.svg)](https://www.npmjs.org/package/comment-json)
+[![npm module downloads per month](https://img.shields.io/npm/dm/@projectxero/comment-json.svg)](https://www.npmjs.org/package/@projectxero/comment-json)
 <!-- optional appveyor tst
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/kaelzhang/node-comment-json?branch=master&svg=true)](https://ci.appveyor.com/project/kaelzhang/node-comment-json)
 -->
@@ -12,6 +10,8 @@
 -->
 
 # comment-json
+
+> Notice! This is a modified version that add TRAILING COMMAS in the stringified output.
 
 Parse and stringify JSON with comments. It will retain comments even after saved!
 

@@ -197,6 +197,8 @@ const array_stringify = (value, gap) => {
     after_comma = process_comments(value, AFTER(i), deeper_gap)
   }
 
+  if (inside) inside += COMMA;
+
   inside += join(
     after_comma,
     process_comments(value, PREFIX_AFTER, deeper_gap),
@@ -272,6 +274,8 @@ const object_stringify = (value, gap) => {
   // if (after_comma) {
   //   inside += COMMA
   // }
+
+  if (inside) inside += COMMA;
 
   inside += join(
     after_comma,
